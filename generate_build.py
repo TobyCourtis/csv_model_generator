@@ -5,9 +5,10 @@ from datetime import datetime,time,timedelta
 
 # parameters 
 track_version = 1
-path = "/Users/CAL/Desktop/"
+path = "/Users/CAL/Documents/TC/repos/csv_model_generator/"
 file = "example_track1_csv"
 
+#path = "/Users/CAL/Desktop/"
 #"test_blender_house"
 #"garage_4_courses"
 #"Garage Bricks v1.3"
