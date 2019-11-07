@@ -4,9 +4,9 @@ import math
 from datetime import datetime,time,timedelta
 
 # parameters 
-track_version = 2
+track_version = 1
 path = "/Users/CAL/Desktop/"
-file = "Garage Bricks v1.3"
+file = "example_track1_csv"
 
 #"test_blender_house"
 #"garage_4_courses"
@@ -32,7 +32,7 @@ def add_brick(x,z,y,angle):
     if (angle > 0):
         bpy.context.active_object.rotation_mode = 'XYZ'
         radians = (angle/180 * math.pi)
-        bpy.context.active_object.rotation_euler = (0,0,pi/2)
+        bpy.context.active_object.rotation_euler = (0,0,math.pi/2)
 
 def add_half_brick(x,z,y,angle):
     bpy.ops.mesh.primitive_cube_add(location=(x,z,y), size=1)
@@ -40,7 +40,7 @@ def add_half_brick(x,z,y,angle):
     if (angle > 0):
         bpy.context.active_object.rotation_mode = 'XYZ'
         radians = (angle/180 * math.pi)
-        bpy.context.active_object.rotation_euler = (0,0,pi/2)
+        bpy.context.active_object.rotation_euler = (0,0,math.pi/2)
 
 
 def ten_brick():
