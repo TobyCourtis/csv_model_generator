@@ -1,7 +1,7 @@
 # CSV 3D Model Generator
 Python file used to read in a CSV file containing a house build to then produce a 3D model/visualisation in Blender
 
-HOWTO Run file:
+How To Run file:
 
 1) Open Blender > New File (General) > Scripting > Python Console
 
