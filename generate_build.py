@@ -2,17 +2,35 @@ import bpy
 import csv
 import math
 from datetime import datetime,time,timedelta
+import sys
 
-# parameters 
-track_version = 1
-path = "/Users/CAL/Documents/TC/repos/csv_model_generator/"
-file = "example_track1_csv"
+argv = sys.argv
+argv = argv[argv.index("--") + 1:]
+print(argv[:]) 
 
 #path = "/Users/CAL/Desktop/"
 #"test_blender_house"
 #"garage_4_courses"
 #"Garage Bricks v1.3"
- #"if needed 16 courses 2 doors"
+#"if needed 16 courses 2 doors"
+ 
+# parameters 
+#path = "/Users/CAL/Documents/TC/repos/csv_model_generator/"
+path = "/Users/CAL/Desktop/"
+
+if(len(argv) == 1):
+    # do here
+    file = argv[0]
+    track_version = 2
+elif(len(argv)):
+    # do two args
+    file = argv[0]
+    track_version = int(argv[1])
+else:
+    path = "/Users/CAL/Documents/TC/repos/csv_model_generator/"
+    file = "example_track1_csv"
+    track_version = 1
+    
 
 # track v1 dimensions
 if (track_version == 1):

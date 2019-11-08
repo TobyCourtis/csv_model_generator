@@ -4,7 +4,13 @@ Python file used to read in a CSV file containing a house build to then produce 
 How To Run Automatically:
 1) Edit the generate_build.py file. At the top of the file change the path, file and track_version lines. track_version = 1 for the test track and =2 for the garage track.
 
-2) cd "C:\Program Files\Blender Foundation\Blender\"; ./blender C:\Users\CAL\Documents\first_test.blend --python C:\Users\CAL\Documents\TC\repos\csv_model_generator\generate_build.py
+2)
+No Parameters: Path = Repo folder, File = "example_track1_csv", Track = 1
+cd "C:\Program Files\Blender Foundation\Blender\"; ./blender C:\Users\CAL\Documents\first_test.blend --python C:\Users\CAL\Documents\TC\repos\csv_model_generator\generate_build.py --
+One Parameter: File parameter in quotes
+cd "C:\Program Files\Blender Foundation\Blender\"; ./blender C:\Users\CAL\Documents\first_test.blend --python C:\Users\CAL\Documents\TC\repos\csv_model_generator\generate_build.py -- "Garage Bricks v1.3"
+Two Parameter: File parameter in quotes, Track version as integer
+cd "C:\Program Files\Blender Foundation\Blender\"; ./blender C:\Users\CAL\Documents\first_test.blend --python C:\Users\CAL\Documents\TC\repos\csv_model_generator\generate_build.py -- "Four Full Layers (03_10_2019)" 1
 
 
 How To Run Manually:
@@ -17,3 +23,9 @@ How To Run Manually:
    Where "/Users/CAL/Desktop/generate_build.py" is the path to the generate_build.py file
 
 4) Do not use blender whilst the code executes - upon build the console will show the time taken to produce the 3D model
+
+How To Run 'produce_model.bat':
+
+1) Alter the .bat to include the correct command
+
+2) Double click to execute that batch file and command
