@@ -6,7 +6,6 @@ import sys
 
 argv = sys.argv
 argv = argv[argv.index("--") + 1:]
-print(argv[:]) 
 
 #path = "/Users/CAL/Desktop/"
 #"test_blender_house"
